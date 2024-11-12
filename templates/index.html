@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
     {% load static %}
-
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
 
     <style>
         h1{
@@ -25,15 +26,19 @@
 <body>
 
 <h1>CareConnect</h1>
-<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum eum ex facilis fugiat officia tenetur ullam? A illo quas saepe? Asperiores explicabo illum nulla odit rem saepe temporibus! Quis.</span><span>Alias cum debitis esse, excepturi iste laboriosam perspiciatis provident vero. Accusantium aut dicta distinctio enim natus quas quo sequi voluptatum! Architecto cumque debitis dicta fuga iusto natus quisquam ullam vel.</span></p>
-<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque consectetur dignissimos error illo incidunt inventore itaque iusto magnam nesciunt nihil non odio perferendis quae sed sequi, similique vel voluptas.</span><span>Assumenda cupiditate earum illo labore recusandae. Asperiores incidunt, libero necessitatibus nulla omnis reprehenderit voluptatem. Ab laudantium sint voluptatibus! Asperiores blanditiis distinctio ducimus laborum neque nostrum saepe similique tempore voluptate voluptatem.</span><span>Doloremque ea excepturi in neque, recusandae tempore temporibus veritatis. A accusamus adipisci commodi corporis dignissimos ea earum esse expedita illum laborum nemo, nobis officiis quae quas quidem similique tenetur voluptatibus.</span></p>
+<a href="{% url 'home' %}" class="btn btn-primary">Home</a>
+<a href="{% url 'about' %}" class="btn btn-primary">About</a>
+<a href="{% url 'contact' %}" class="btn btn-primary">Contact</a>
 
-<img src="{% static 'assets/image1.jpeg' %}" alt="">
-<img src="{% static 'assets/image2.jpeg' %}" alt="">
-<img src="{% static 'assets/image3.jpeg' %}" alt="">
-<img src="{% static 'assets/image4.jpeg' %}" alt="">
-<img src="{% static 'assets/image5.jpeg' %}" alt="">
-<img src="{% static 'assets/image6.jpeg' %}" alt="">
+<p class="text-dark"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum eum ex facilis fugiat officia tenetur ullam? A illo quas saepe? Asperiores explicabo illum nulla odit rem saepe temporibus! Quis.</span><span>Alias cum debitis esse, excepturi iste laboriosam perspiciatis provident vero. Accusantium aut dicta distinctio enim natus quas quo sequi voluptatum! Architecto cumque debitis dicta fuga iusto natus quisquam ullam vel.</span></p>
+<p class="text-dark"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque consectetur dignissimos error illo incidunt inventore itaque iusto magnam nesciunt nihil non odio perferendis quae sed sequi, similique vel voluptas.</span><span>Assumenda cupiditate earum illo labore recusandae. Asperiores incidunt, libero necessitatibus nulla omnis reprehenderit voluptatem. Ab laudantium sint voluptatibus! Asperiores blanditiis distinctio ducimus laborum neque nostrum saepe similique tempore voluptate voluptatem.</span><span>Doloremque ea excepturi in neque, recusandae tempore temporibus veritatis. A accusamus adipisci commodi corporis dignissimos ea earum esse expedita illum laborum nemo, nobis officiis quae quas quidem similique tenetur voluptatibus.</span></p>
+
+<img src="{% static 'assets/image1.jpeg' %}" alt="" class="img-responsive p-1 m-2">
+<img src="{% static 'assets/image2.jpeg' %}" alt="" class="img-responsive p-1 m-2">
+<img src="{% static 'assets/image3.jpeg' %}" alt="" class="img-responsive p-1 m-2">
+<img src="{% static 'assets/image4.jpeg' %}" alt="" class="img-responsive p-1 m-2">
+<img src="{% static 'assets/image5.jpeg' %}" alt="" class="img-responsive p-1 m-2">
+<img src="{% static 'assets/image6.jpeg' %}" alt="" class="img-responsive p-1 m-2">
 
 </body>
 </html>
